@@ -25,6 +25,7 @@ export default class RegistrationForm extends Component {
         nick_name.value = ''
         user_name.value = ''
         password.value = ''
+        console.log('Halloo from the register form before the success callback')
         this.props.onRegistrationSuccess()
       })
       .catch(res => {
